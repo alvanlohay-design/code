@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video audio</title>
+    <style>
+        .video-container {
+            background: linear-gradient(to left, aqua, rgb(0, 255, 30), rgb(13, 255, 0), forestgreen);
+            height: 100vh;
+            width: 80%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .video-container video {
+            border: 5px ridge hotpink;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 1px 10px 25px rgba(175, 123, 42, 0.8);
+        }
+
+        .video-container video:hover {
+            transform: translateY(20px);
+        }
+
+        .audio-container {
+            background-color: gray;
+            height: 250px;
+            width: 40%;
+            border: 5px ridge hotpink;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            box-shadow: 1px 10px 25px rgba(255, 255,255,0.8);
+            gap: 10px;
+        }
+        .audio-container h2{
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .audio-container audio{
+            background-color: pink;
+            width: 60%;
+            padding: 5px;
+            border-radius: 9px;
+        }
+        .audio-container:hover{
+            background-color: blueviolet;
+        }
+        .audio-container h2:hover{
+            background-color: aqua;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video controls muted autoplay>
+            <source src="my video.mp4" type="video/mp4">
+        </video>
+        <div class="audio-container">
+            <audio controls uted>
+                <source src="my favorite song.mp3" type="audio/mp3">
+            </audio>
+            <h2>My idol</h2>
+             <div class="left"><a href="my you.html"></a>
+        </div>
+    </div>
+</body>
+
+</html>
